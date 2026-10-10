@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>من نحن — Aeltrix | فريق تطوير قطرة</title>
+<meta name="description" content="تعرّف على Aeltrix، فريق تطوير مكوّن من شخصين، وعلى طريقة بناء تطبيق قطرة." />
+<meta name="theme-color" content="#0A0A0A" />
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Aeltrix">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0A0A0A"/><path d="M16 5c0 0-7 9-7 14.5a7 7 0 0 0 14 0C23 14 16 5 16 5Z" fill="#8CE04C"/></svg>
+      <span>AELTRIX</span>
+    </a>
+    <nav class="nav__links" aria-label="التنقل الرئيسي">
+      <a class="nav__link" href="index.html">الرئيسية</a>
+      <a class="nav__link" href="download.html">التحميل</a>
+      <a class="nav__link" href="about.html" aria-current="page">من نحن</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary nav__cta" href="download.html" data-download-apk><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span data-download-label>حمّل قطرة</span></a>
+      <button class="nav__menu" data-menu-open aria-label="فتح القائمة" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" data-drawer data-open="false" aria-hidden="true">
+  <div class="drawer__head">
+    <a href="index.html" class="nav__logo"><svg viewBox="0 0 32 32"><rect width="32" height="32" rx="8" fill="#8CE04C"/><path d="M16 5c0 0-7 9-7 14.5a7 7 0 0 0 14 0C23 14 16 5 16 5Z" fill="#0A0A0A"/></svg><span>AELTRIX</span></a>
+    <button class="drawer__close" data-menu-close aria-label="إغلاق القائمة"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
+  </div>
+  <nav class="drawer__nav"><a href="index.html">الرئيسية</a><a href="download.html">التحميل</a><a href="about.html" aria-current="page">من نحن</a></nav>
+</div>
+
+<main id="main">
+
+  <section class="hero dl-hero">
+    <div class="container">
+      <span class="eyebrow hero__eyebrow">About · Aeltrix</span>
+      <h1>نحن Aeltrix،<br>فريق صغير بأفكار تقنية كبيرة.</h1>
+      <p class="hero__lead">Aeltrix فريق تطوير مكوّن من شخصين، يجمع بين التجربة والتصميم والبرمجة لبناء مشاريع تقنية عملية.</p>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section section--void" style="padding-top: clamp(40px, 6vw, 80px);">
+    <div class="container team-grid">
+      <div class="reveal">
+        <span class="eyebrow">Team</span>
+        <h2 style="margin: 14px 0 18px;">شخصان، مشروع واحد.</h2>
+        <p>Aeltrix ليس استوديو كبيرًا ولا شركة. إنه فريق صغير يعمل على مشاريع يهتم بها، ويحاول أن يبني أدوات بسيطة تُستعمل كل يوم. قطرة هو أول مشروع نشاركه بهذا الشكل.</p>
+        <p style="margin-top: 16px;">نعمل بوتيرة هادئة، ونراجع كل قرار بأنفسنا — من تصميم الواجهة إلى سلوك التطبيق على الأجهزة الحقيقية.</p>
+      </div>
+      <figure class="team-photo reveal">
+        <div class="team-photo__placeholder" data-team-placeholder>
+          <span class="latin">AELTRIX</span>
+          <small>assets/images/aeltrix-team.png</small>
+        </div>
+        <img data-cfg="teamImage" alt="صورة فريق Aeltrix" hidden
+             onerror="this.hidden=true; this.previousElementSibling.hidden=false;"
+             onload="this.hidden=false; this.previousElementSibling.hidden=true;" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- AI development -->
+  <section class="section section--char">
+    <div class="container container--narrow">
+      <div class="section__head section__head--center reveal">
+        <span class="eyebrow">How we build</span>
+        <h2>الذكاء الاصطناعي سرّع العمل، والفريق قاد المشروع.</h2>
+        <p>استُخدمت أدوات الذكاء الاصطناعي لتسريع بعض مراحل التطوير، والمساعدة في استكشاف الحلول وتحسين سير العمل. كان الهدف الاستفادة من التقنية لزيادة كفاءة التنفيذ، مع بقاء قرارات المشروع ومراجعته وتطويره ضمن عمل فريق Aeltrix.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principles -->
+  <section class="section section--void">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Principles</span>
+        <h2>ثلاثة مبادئ نبني عليها.</h2>
+      </div>
+      <div class="principles">
+        <article class="principle reveal">
+          <span class="principle__n">01</span>
+          <h3>البساطة قبل التعقيد.</h3>
+          <p>نفضّل الميزة الواحدة التي تُستعمل على العشر التي تُهمَل. كل شاشة وكل زر يجب أن يكون له سبب واضح.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="principle__n">02</span>
+          <h3>التقنية لخدمة الناس.</h3>
+          <p>نبني أدوات للأشخاص العاديين، لا للمتخصصين. منتجنا يجب أن يعمل من اللحظة الأولى دون شرح طويل.</p>
+        </article>
+        <article class="principle reveal">
+          <span class="principle__n">03</span>
+          <h3>التعلّم المستمر والتطوير.</h3>
+          <p>كل مشروع نبنيه هو فرصة لنتعلم شيئًا جديدًا. نراجع القرارات السابقة، ونحسّنها بدل أن نتركها كما هي.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section class="section section--void">
+    <div class="container container--narrow">
+      <div class="section__head reveal">
+        <span class="eyebrow">Why Qatra</span>
+        <h2>لماذا بنينا قطرة؟</h2>
+        <p>لاحظنا أن تذكير شرب الماء في كثير من التطبيقات تحوّل إلى شيء معقّد: تسجيل دخول، إشعارات مزعجة، وبيانات ترسل إلى جهات خارجية. أردنا شيئًا هادئًا: تطبيق يعمل دون اتصال، يحفظ بياناتك على جهازك، ويساعدك على بناء عادة بسيطة بلا ضغط.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing -->
+  <section class="section section--shout">
+    <div class="container cta-final reveal">
+      <span class="eyebrow" style="color: rgba(0,0,0,0.55);">Get started</span>
+      <h2>جرّب قطرة.</h2>
+      <p>تنزيل مباشر · مجانًا · بدون حساب.</p>
+      <a class="btn btn--dark" href="download.html" data-download-apk>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span data-download-label>تحميل التطبيق للأندرويد</span>
+      </a>
+      <p style="margin-top: 48px; font-family: var(--font-en); font-weight: 800; letter-spacing: 0.24em; color: rgba(0,0,0,0.5); font-size: 13px;">— AELTRIX —</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="footer__brand-logo">
+          <svg viewBox="0 0 32 32" width="28" height="28"><rect width="32" height="32" rx="8" fill="#0A0A0A" stroke="rgba(255,255,255,0.08)"/><path d="M16 5c0 0-7 9-7 14.5a7 7 0 0 0 14 0C23 14 16 5 16 5Z" fill="#8CE04C"/></svg>
+          <span>AELTRIX</span>
+        </div>
+        <p>نبني تطبيقات صغيرة بعناية، لأشياء تُستعمل كل يوم.</p>
+      </div>
+      <div class="footer__col"><h4>الموقع</h4><ul><li><a href="index.html">الرئيسية</a></li><li><a href="download.html">التحميل</a></li><li><a href="about.html">من نحن</a></li></ul></div>
+      <div class="footer__col"><h4>المشروع</h4><ul><li><a href="#" data-cfg="releasesUrl" target="_blank" rel="noopener">أحدث إصدار</a></li><li><a href="#" data-cfg="githubUrl" target="_blank" rel="noopener">GitHub</a></li></ul></div>
+      <div class="footer__col"><h4>المنتج</h4><ul><li><span class="mono" style="color:var(--fg-subtle); font-size: 0.85rem;">v<span data-cfg="version">1.0.0</span></span></li><li><span class="mono" style="color:var(--fg-subtle); font-size: 0.85rem;">Android 8.0+</span></li></ul></div>
+    </div>
+    <div class="footer__bottom"><span>© <span data-year>2025</span> Aeltrix. جميع الحقوق محفوظة.</span><span class="latin">Made with care.</span></div>
+  </div>
+</footer>
+
+<nav class="dock" data-dock aria-label="التنقل السريع">
+  <a class="dock__item" href="index.html" aria-label="الرئيسية"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10l9-7 9 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><span class="dock__tip">الرئيسية</span></a>
+  <a class="dock__item" href="download.html" aria-label="التحميل"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg><span class="dock__tip">التحميل</span></a>
+  <a class="dock__item" href="about.html" aria-current="page" aria-label="من نحن"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><span class="dock__tip">من نحن</span></a>
+  <a class="dock__item" href="#" data-cfg="githubUrl" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.4.5 0 5.9 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6C20.6 22.3 24 17.8 24 12.5 24 5.9 18.6.5 12 .5z"/></svg><span class="dock__tip">GitHub</span></a>
+</nav>
+
+<script src="site-config.js"></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
